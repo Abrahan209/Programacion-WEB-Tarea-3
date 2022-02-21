@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda multicapas</title>
-    <script src="backend.js"></script>
     <link rel="stylesheet" href="frontend.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ -->
 </head>
 
 <body onload="cargar()">
-    <div id="ingresar" align =" center" class="container">
+    <div id="ingresar" class="container" align="center">
+        <br>
+        <br>
         <h3>Agregar contacto:</h3>
         <br>
         <input type="text" id="nombre" placeholder="Nombre">
@@ -28,22 +30,19 @@
         <input type="button" id="save" value="Guardar" onclick="enviar()">
     </div>
     <div id="tabla" class="container">
-        <table class="table table-striped" class="table table-hover" >
-            <thead id="titulos" class="thead-dark">
-                <tr>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Apellido</th>
-                    <th scope="col">Telefono</th>
-                </tr>
-                
-            </thead>
+
+        <p><span style="border: none;">Nombre</span><span>Apellido</span><span>Telefono</span></p>
+
+        <table class="table table-striped" class="table table-hover">
+
             <tbody id="tbl-datos" class="col">
 
             </tbody>
 
-        </table>        
+        </table>
     </div>
 
+    <script src="backend.js"></script>
 </body>
 
 </html>

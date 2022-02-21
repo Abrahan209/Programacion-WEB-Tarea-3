@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #tbl-datos{
     display: flex;
     flex-direction: column-reverse;
@@ -7,28 +13,19 @@ h3{
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
+
 #ingresar{
-    background-color: slategrey;
+    background-color:brown;
     border-radius: 10ch;
     height: 40ch;
     width: 60ch;
     padding: 3ch;
     position: absolute;
     left: 95ch;
-    top: 3ch;
+    top: 150px;
 
 }
 
-td {
-    display: inline-block;
-    width:50px;
-}
-
-thead{
-    display: inline-flex;
-    width: 200px;
-    
-}
 #tabla{
     
     height: 23ch;
@@ -37,4 +34,50 @@ thead{
     position: absolute;
     /* left: 60ch; */
     top: 3ch;
+}
+
+#tabla {
+    width: 600px;
+}
+
+tr {
+    width: 600px;
+    background-color: brown;
+}
+
+th {
+    width: 200px;
+}
+
+td {
+    width: 200px;
+    height: 50px;
+    border: 2px solid white;
+    padding-left: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+p {
+    width: 600px;
+    background-color:white;
+    height: 50px;
+    text-align: center;
+}
+
+p span {
+    display: inline-block;
+    width: 200px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: black;
+    border-left: 3px solid ;
+}
+
+p div {
+    border: 3px solid white;
+}
+
+body{
+    background-color: cadetblue;
 }

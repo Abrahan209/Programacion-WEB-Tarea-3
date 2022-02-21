@@ -16,6 +16,10 @@ function cargar() {
                 tr2.innerHTML = data.apellido;
                 tr3.innerHTML = data.telefono;
 
+                tr1.classList.add('rojo')
+                tr2.classList.add('verde')
+                tr3.classList.add('m')
+
                 columnanombre.appendChild(tr1)
                 columnanombre.appendChild(tr2)
                 columnanombre.appendChild(tr3)
