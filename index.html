@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda multicapas</title>
+    <script src="backend.js"></script>
+    <link rel="stylesheet" href="frontend.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body onload="cargar()">
+    <div id="ingresar" align =" center" class="container">
+        <h3>Agregar contacto:</h3>
+        <br>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <br>
+        <br>
+        <input type="text" id="apellido" placeholder="Apellido">
+        <br>
+        <br>
+        <input type="text" id="telefono" placeholder="Telefono">
+        <br>
+        <br>
+        <input type="button" id="save" value="Guardar" onclick="enviar()">
+    </div>
+    <div id="tabla" class="container">
+        <table class="table table-striped" class="table table-hover" >
+            <thead id="titulos" class="thead-dark">
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Telefono</th>
+                </tr>
+                
+            </thead>
+            <tbody id="tbl-datos" class="col">
+
+            </tbody>
+
+        </table>        
+    </div>
+
+</body>
+
+</html>

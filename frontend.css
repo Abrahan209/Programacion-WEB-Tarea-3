@@ -1,0 +1,40 @@
+#tbl-datos{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+#ingresar{
+    background-color: slategrey;
+    border-radius: 10ch;
+    height: 40ch;
+    width: 60ch;
+    padding: 3ch;
+    position: absolute;
+    left: 95ch;
+    top: 3ch;
+
+}
+
+td {
+    display: inline-block;
+    width:50px;
+}
+
+thead{
+    display: inline-flex;
+    width: 200px;
+    
+}
+#tabla{
+    
+    height: 23ch;
+    width: 32ch;
+    padding: 3ch;
+    position: absolute;
+    /* left: 60ch; */
+    top: 3ch;
+}
